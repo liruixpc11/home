@@ -11,6 +11,24 @@
     <title>{{ page.title }}</title>
 </head>
 <body>
-{{ content }}
+
+<header>
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        <h2>哈哈爱护的吧</h2>
+
+        <section id="downloads">
+            <a href="https://github.com/liruixpc11/home/zipball/master" class="btn">Download as .zip</a>
+            <a href="https://github.com/liruixpc11/home/tarball/master" class="btn">Download as .tar.gz</a>
+            <a href="https://github.com/liruixpc11/home" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+    </div>
+</header>
+
+<div class="container">
+    <section id="main_content">
+        {{ content }}
+    </section>
+</div>
 </body>
 </html>

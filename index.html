@@ -1,29 +1,11 @@
 ---
 layout: default
-title: 哈哈爱护的吧
+title: 首页
 ---
 
-<header>
-    <div class="container">
-        <h1>哈哈爱护的吧</h1>
-
-        <h2></h2>
-
-        <section id="downloads">
-            <a href="https://github.com/liruixpc11/home/zipball/master" class="btn">Download as .zip</a>
-            <a href="https://github.com/liruixpc11/home/tarball/master" class="btn">Download as .tar.gz</a>
-            <a href="https://github.com/liruixpc11/home" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-    </div>
-</header>
-
-<div class="container">
-    <section id="main_content">
-        <ul>
-            {% for post in site.posts %}
-            <li>{{ post.date | date_to_string }}&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-</div>
+<ul>
+    {% for post in site.posts %}
+    <li>{{ post.date | date_to_string }}&nbsp;<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
 
